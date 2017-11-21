@@ -13,14 +13,14 @@ public final class Utils {
     }
 
     public static String generateDate(Integer daysToAdd) {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd : hh:mm:ss");
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.DATE, daysToAdd);
         return dateFormat.format(cal.getTime());
     }
     
     public static String dateChange(String departure, Integer daysToChange ){
-    	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd : hh:mm");
     	Date date = null;
 		try {
 			date = dateFormat.parse(departure);
