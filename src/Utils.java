@@ -5,11 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public final class Utils {
+public class Utils {
     public static final float PRICE_DELTA = 0.001f;
 
     private Utils() {
-        throw new IllegalAccessError("Utility class");
+        throw new IllegalAccessError("Utility classes");
     }
 
     public static String generateDate(Integer daysToAdd) {
@@ -60,4 +60,5 @@ public final class Utils {
     public static int compareFloatPrices(float price1, float price2){
         return compareFloats(price1, price2, PRICE_DELTA);
     }
+    
 }
